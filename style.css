@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.backGround {
+  background:url("/img/pattern-hills.svg"), url("./img/bg-stars.svg"), linear-gradient(180deg, #191A24 17%, #1e1f29 51%, #2b212d 83%);
+  background-repeat: no-repeat;
+  background-position: 82% 100%, center center;
+  background-size: 100%, cover;
+  width: 100%;
+  height: 630px;
+}
+
+.flex1 {
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  max-width: 700px;
+  height: 100px;
+}
+
+.top1 {
+  flex: 20%;
+  height: 100px;
+  background-image: url('./img/card-top.svg');
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wraper-flip {
+  flex: 20%;
+  perspective: 1000px;
+  z-index: 20;
+}
+
+.box-flip {
+  width: 100%;
+  height: 180px;
+  transform-style: preserve-3d;
+}
+
+
+.flip-top {
+  background-image: url('./img/card-top.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.flip-bottom {
+  background-image: url('./img/card-bottom.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80px;
+  transform: rotateX(180deg);
+  position: relative;
+  top: -56px;
+  text-align: center;
+}
+
+.flip-bottom, .flip-top {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.flex-bottom {
+  position: relative;
+  top: -25px;
+  z-index: 1;
+  text-align: center;
+}
+
+.bottom {
+  flex: 20%;
+  height: 80px;
+  background-image: url('./img/card-bottom.svg');
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+}
+
+.were {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.flex-center {
+  margin-top: 100px;
+}
+
+.flex-top {
+  position: relative;
+  top: 232px;
+  z-index: 1;
+}
+
+.mid {
+  font-size: 16px;
+  font-family: 'Red Hat Text', sans-serif;
+  text-align: center;
+  color: hsl(237, 18%, 59%);
+  margin-top: -10px;
+  letter-spacing: 3px;
+}
+
+.number , .day , .minute , .hour{
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif; 
+  color: hsl(345, 95%, 68%);
+}
+
+.back-b {
+  position: relative;
+  top: 25px;
+}
+
+.back-p {
+  position: relative;
+  top: -52px;
+}
+
+.back-top {
+  position: relative;
+  top: -50px;
+}
+
+.back-o {
+  position: relative;
+  top: 26px;
+}
+
+.bg-bottom {
+  background-image: url('./img/pattern-hills.svg');
+  width: 100%;
+  height: 200px;
+}
